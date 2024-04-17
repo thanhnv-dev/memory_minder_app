@@ -14,6 +14,19 @@
         "cwd": "${workspaceFolder}"
       }
     },
+    {
+      "label": "Generate assets constant file",
+      "type": "shell",
+      "command": "chmod 755 ./scripts/generate_assets_constant_file.sh && ./scripts/generate_assets_constant_file.sh",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
 
     // START network.
     {
@@ -26,7 +39,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/network"
+        "cwd": "${workspaceFolder}/modules/network"
       }
     },
     {
@@ -39,7 +52,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/network"
+        "cwd": "${workspaceFolder}/modules/network"
       }
     },
     {
@@ -52,7 +65,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/network"
+        "cwd": "${workspaceFolder}/modules/network"
       }
     },
     {
@@ -65,7 +78,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/network"
+        "cwd": "${workspaceFolder}/modules/network"
       }
     },
     // END network.
@@ -174,6 +187,32 @@
         "cwd": "${workspaceFolder}"
       }
     },
+    {
+      "label": "main - i18n generate codegen_loader.g.dart",
+      "type": "shell",
+      "command": "chmod 755 scripts/i18n_generate_code_loader.sh && scripts/i18n_generate_code_loader.sh",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "main - i18n generate file locale_keys.dart",
+      "type": "shell",
+      "command": "chmod 755 scripts/i18n_generate_locale_keys.sh && scripts/i18n_generate_locale_keys.sh",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
     // END main
 
     // START local_storage.
@@ -187,7 +226,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/local_storage"
+        "cwd": "${workspaceFolder}/modules/local_storage"
       }
     },
     {
@@ -200,7 +239,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/local_storage"
+        "cwd": "${workspaceFolder}/modules/local_storage"
       }
     },
     {
@@ -213,78 +252,10 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/local_storage"
+        "cwd": "${workspaceFolder}/modules/local_storage"
       }
     },
     // END local_storage.
-
-    // START i18n.
-    {
-      "label": "i18n - flutter pub get",
-      "type": "shell",
-      "command": "fvm flutter pub get",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/lib/modules/i18n"
-      }
-    },
-    {
-      "label": "i18n - flutter clean",
-      "type": "shell",
-      "command": "fvm flutter clean",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/lib/modules/i18n"
-      }
-    },
-    {
-      "label": "i18n - flutter pub upgrade",
-      "type": "shell",
-      "command": "fvm flutter pub upgrade --major-versions",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/lib/modules/i18n"
-      }
-    },
-    {
-      "label": "i18n - generate file codegen_loader.g.dart",
-      "type": "shell",
-      "command": "fvm flutter pub run easy_localization:generate -S 'lib/langs' -O 'lib/generated'",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/lib/modules/i18n"
-      }
-    },
-    {
-      "label": "i18n - generate file locale_keys.dart",
-      "type": "shell",
-      "command": "fvm flutter pub run easy_localization:generate -S 'lib/langs' -O 'lib/generated' -o 'locale_keys.dart' -f keys",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/lib/modules/i18n"
-      }
-    },
-    // END i18n.
 
     // START models.
     {
@@ -297,7 +268,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/models"
+        "cwd": "${workspaceFolder}/modules/models"
       }
     },
     {
@@ -310,7 +281,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/models"
+        "cwd": "${workspaceFolder}/modules/models"
       }
     },
     {
@@ -323,7 +294,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/models"
+        "cwd": "${workspaceFolder}/modules/models"
       }
     },
     {
@@ -336,7 +307,7 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/lib/modules/models"
+        "cwd": "${workspaceFolder}/modules/models"
       }
     }
     // END models.
