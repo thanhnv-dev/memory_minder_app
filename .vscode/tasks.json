@@ -27,6 +27,19 @@
         "cwd": "${workspaceFolder}"
       }
     },
+    {
+      "label": "build_runner",
+      "type": "shell",
+      "command": "chmod 755 ./scripts/build_runner.sh && ./scripts/build_runner.sh",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
 
     // START network.
     {

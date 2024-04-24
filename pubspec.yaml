@@ -15,13 +15,18 @@ dependencies:
     path: ./modules/local_storage
   network:
     path: ./modules/network
-  models:
-    path: ./modules/models
 
   cupertino_icons: ^1.0.6
   auto_route: ^8.0.3
   flutter_svg: ^2.0.10+1
   easy_localization: ^3.0.5
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  fpdart: ^1.1.0
+  flutter_custom_logger: ^1.0.1
+  dio: ^5.4.3+1
+  shared_preferences: ^2.2.3
+  retrofit: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +35,9 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   auto_route_generator: ^8.0.0
   build_runner: ^2.4.9
+  freezed: ^2.5.2
+  json_serializable: ^6.7.1
+  retrofit_generator: ^8.1.0
 
 flutter:
   uses-material-design: true
