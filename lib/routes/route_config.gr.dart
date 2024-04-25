@@ -9,10 +9,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i3;
-import 'package:memory_minder_app/features/authentication/presentation/onboarding_screen.dart'
-    as _i1;
-import 'package:memory_minder_app/features/authentication/presentation/splash_screen.dart'
-    as _i2;
+import 'package:memory_minder_app/features/authentication/presentation/pages/onboarding_screen.dart' as _i1;
+import 'package:memory_minder_app/features/authentication/presentation/pages/splash_screen.dart' as _i2;
 
 abstract class $AppRouter extends _i3.RootStackRouter {
   $AppRouter({super.navigatorKey});

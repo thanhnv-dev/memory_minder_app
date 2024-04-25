@@ -24,6 +24,7 @@ abstract class  LocaleKeys {
   static const onboardingSecondSubTitle = 'onboardingSecondSubTitle';
   static const onboardingThirdTitle = 'onboardingThirdTitle';
   static const onboardingThirdSubTitle = 'onboardingThirdSubTitle';
+  static const onboardingButtonStartedTitle = 'onboardingButtonStartedTitle';
   static const authMethodTitle = 'authMethodTitle';
   static const authMethodSubTitle = 'authMethodSubTitle';
   static const authMethodEmailButtonTitle = 'authMethodEmailButtonTitle';
