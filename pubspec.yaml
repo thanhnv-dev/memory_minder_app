@@ -27,6 +27,8 @@ dependencies:
   dio: ^5.4.3+1
   shared_preferences: ^2.2.3
   retrofit: ^4.1.0
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
 
 dev_dependencies:
   flutter_test:
@@ -38,11 +40,15 @@ dev_dependencies:
   freezed: ^2.5.2
   json_serializable: ^6.7.1
   retrofit_generator: ^8.1.0
+  riverpod_generator: ^2.4.0
+  custom_lint: ^0.6.4
+  riverpod_lint: ^2.3.10
 
 flutter:
   uses-material-design: true
   assets:
     - lib/assets/icons/svg/
+    - lib/assets/icons/other/
     - lib/assets/images/svg/
     - lib/assets/images/other/
     - lib/i18n/langs/

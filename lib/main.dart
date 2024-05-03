@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:memory_minder_app/config/app_theme.dart';
 import 'package:memory_minder_app/i18n/i18n_func.dart';
 import 'package:memory_minder_app/i18n/i18n.dart';
@@ -9,7 +10,9 @@ void main() async {
 
   runApp(
     await I18n.init(
-      child: MyApp(),
+      child: ProviderScope(
+        child: MyApp(),
+      ),
     ),
   );
 }

@@ -110,4 +110,10 @@ class Body {
   );
 }
 
-class Custom {}
+class Custom {
+  final TextStyle titleLogo = TextStyle(
+    fontFamily: AppFontsFamily.roboto.bold,
+    fontWeight: FontWeight.w900,
+    fontSize: 30,
+  );
+}

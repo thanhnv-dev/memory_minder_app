@@ -6,46 +6,50 @@ import 'package:memory_minder_app/utils/utils.dart';
 class CustomOnboardingTitle extends StatelessWidget {
   const CustomOnboardingTitle({
     super.key,
-    required int currentPageIndex,
-  }) : _currentPageIndex = currentPageIndex;
+    required this.currentIndex,
+  });
 
-  final int _currentPageIndex;
+  final int currentIndex;
 
   @override
   Widget build(BuildContext context) {
+    TextTheme textTheme = Utils.getTextTheme(context);
+    ColorScheme colorScheme = Utils.getThemeColorScheme(context);
     return Stack(
       children: [
         _customTitle(
-          context: context,
-          index: 0,
+          show: currentIndex == 0,
           titleKey: LocaleKeys.onboardingFirstTitle,
           subTitleKey: LocaleKeys.onboardingFirstSubTitle,
+          textTheme: textTheme,
+          colorScheme: colorScheme,
         ),
         _customTitle(
-          context: context,
-          index: 1,
+          show: currentIndex == 1,
           titleKey: LocaleKeys.onboardingSecondTitle,
           subTitleKey: LocaleKeys.onboardingSecondSubTitle,
+          textTheme: textTheme,
+          colorScheme: colorScheme,
         ),
         _customTitle(
-          context: context,
-          index: 2,
+          show: currentIndex == 2,
           titleKey: LocaleKeys.onboardingThirdTitle,
           subTitleKey: LocaleKeys.onboardingThirdSubTitle,
+          textTheme: textTheme,
+          colorScheme: colorScheme,
         ),
       ],
     );
   }
 
   Widget _customTitle({
-    required BuildContext context,
-    required int index,
     required String titleKey,
     required String subTitleKey,
+    required bool show,
+    required TextTheme textTheme,
+    required ColorScheme colorScheme,
   }) {
-    TextTheme textTheme = Utils.getTextTheme(context);
-    ColorScheme colorScheme = Utils.getThemeColorScheme(context);
-    return _currentPageIndex == index
+    return show
         ? Column(
             children: [
               Container(
