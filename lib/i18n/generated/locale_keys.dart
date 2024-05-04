@@ -8,6 +8,7 @@ abstract class  LocaleKeys {
   static const commonSignIn = 'commonSignIn';
   static const commonSignUp = 'commonSignUp';
   static const commonEmailAddress = 'commonEmailAddress';
+  static const commonEmailHintText = 'commonEmailHintText';
   static const commonPassword = 'commonPassword';
   static const commonConfirmPassword = 'commonConfirmPassword';
   static const commonAnd = 'commonAnd';

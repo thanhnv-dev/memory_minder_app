@@ -7,7 +7,7 @@ part of 'auth_active_part_login_with_mail_provider.dart';
 // **************************************************************************
 
 String _$authActivePartLoginWithMailNotifierHash() =>
-    r'4219e52d08cd3759b63d587bd4eca04d758c350e';
+    r'4bfe79cc8a6064ba177985dbf4e1dd37964f405d';
 
 /// See also [AuthActivePartLoginWithMailNotifier].
 @ProviderFor(AuthActivePartLoginWithMailNotifier)

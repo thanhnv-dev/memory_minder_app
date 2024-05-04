@@ -7,7 +7,7 @@ class AuthActivePartLoginWithMailNotifier extends _$AuthActivePartLoginWithMailN
   @override
   bool build() => false;
 
-  void setState(bool newState) {
-    state = newState;
+  void changeState() {
+    state = !state;
   }
 }

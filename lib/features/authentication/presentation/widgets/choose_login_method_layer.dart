@@ -16,12 +16,10 @@ class ChooseLoginMethodLayer extends StatefulWidget {
     super.key,
     required this.pageViewController,
     required this.onPressContinueWithEmail,
-    required this.partLoginWithEmail,
   });
 
   final PageController pageViewController;
   final void Function() onPressContinueWithEmail;
-  final bool partLoginWithEmail;
 
   @override
   ChooseLoginMethodLayerState createState() => ChooseLoginMethodLayerState();
@@ -35,35 +33,11 @@ class ChooseLoginMethodLayerState extends State<ChooseLoginMethodLayer> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          widget.partLoginWithEmail ? _logoAndAppName() : _title(context),
+          _title(context),
           _loginAction(context),
           const TermsAndPrivacy(),
         ],
       ),
-    );
-  }
-
-  Column _logoAndAppName() {
-    return Column(
-      children: [
-        Image.asset(
-          AppOtherIcons.logo,
-          width: 200,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              I18nFunc.getLocaleMessage(LocaleKeys.appNamePart1),
-              style: AppTextStyles.custom.titleLogo.copyWith(color: AppColors.logoColor1),
-            ),
-            Text(
-              " ${I18nFunc.getLocaleMessage(LocaleKeys.appNamePart2)}",
-              style: AppTextStyles.custom.titleLogo.copyWith(color: AppColors.logoColor2),
-            ),
-          ],
-        )
-      ],
     );
   }
 

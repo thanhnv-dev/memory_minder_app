@@ -6,6 +6,7 @@
   "commonSignIn": "Đăng nhập",
   "commonSignUp": "Đăng ký",
   "commonEmailAddress": "Địa chỉ email",
+  "commonEmailHintText": "abc@gmail.com",
   "commonPassword": "Mật khẩu",
   "commonConfirmPassword": "Xác nhận mật khẩu",
   "commonAnd": "và",

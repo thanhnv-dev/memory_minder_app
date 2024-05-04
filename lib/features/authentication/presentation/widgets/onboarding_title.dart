@@ -3,8 +3,8 @@ import 'package:memory_minder_app/i18n/generated/locale_keys.dart';
 import 'package:memory_minder_app/i18n/i18n_func.dart';
 import 'package:memory_minder_app/utils/utils.dart';
 
-class CustomOnboardingTitle extends StatelessWidget {
-  const CustomOnboardingTitle({
+class OnboardingTitle extends StatelessWidget {
+  const OnboardingTitle({
     super.key,
     required this.currentIndex,
   });

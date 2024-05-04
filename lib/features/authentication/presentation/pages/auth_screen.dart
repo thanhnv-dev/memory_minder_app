@@ -1,10 +1,14 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:memory_minder_app/common/widgets/app_scaffold.dart';
 import 'package:memory_minder_app/features/authentication/presentation/riverpod/auth_active_part_login_with_mail_provider.dart';
 import 'package:memory_minder_app/features/authentication/presentation/riverpod/auth_index_part_provider.dart';
+import 'package:memory_minder_app/features/authentication/presentation/riverpod/auth_login_with_email_input_email_provider.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/choose_login_method_layer.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/image_background_layer.dart';
+import 'package:memory_minder_app/features/authentication/presentation/widgets/login_with_email_layer.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/onboarding_layer.dart';
 import 'package:memory_minder_app/utils/utils.dart';
 
@@ -34,7 +38,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
   Widget build(BuildContext context) {
     int authIndexPart = ref.watch(authIndexPartNotifierProvider);
 
-    bool partLoginWithEmail = ref.watch(authActivePartLoginWithMailNotifierProvider);
+    GlobalKey<FormBuilderState> emailInputKey = ref.read(authLoginWithEmailInputEmailNotifierProvider.notifier).getKey;
+
+    bool activePartLoginWithEmail = ref.watch(authActivePartLoginWithMailNotifierProvider);
 
     bool goToSelectLoginMethod = authIndexPart == 3;
 
@@ -43,7 +49,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
     double getHeightWithPersent(double percent) {
       return MediaQuery.of(context).size.height /
           100 *
-          (partLoginWithEmail
+          (activePartLoginWithEmail
               ? percent
               : goToSelectLoginMethod
                   ? 50
@@ -55,7 +61,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
     }
 
     void setAuthActivePartLoginWithMail() {
-      ref.read(authActivePartLoginWithMailNotifierProvider.notifier).setState(!partLoginWithEmail);
+      ref.read(authActivePartLoginWithMailNotifierProvider.notifier).changeState();
     }
 
     void onboardingNextPart() {
@@ -68,8 +74,30 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
       }
     }
 
-    return Scaffold(
-      body: Stack(
+    Widget getLayer() {
+      if (activePartLoginWithEmail) {
+        return LoginWithEmailLayer(
+          emailInputKey: emailInputKey,
+          onPressSignIn: () {},
+          onChangeEmail: ref.read(authLoginWithEmailInputEmailNotifierProvider.notifier).onChanged,
+        );
+      }
+      if (goToSelectLoginMethod) {
+        return ChooseLoginMethodLayer(
+          pageViewController: _pageViewController,
+          onPressContinueWithEmail: setAuthActivePartLoginWithMail,
+        );
+      }
+      return OnboardingLayer(
+        authIndexPart: authIndexPart,
+        pageViewController: _pageViewController,
+        nextPart: onboardingNextPart,
+      );
+    }
+
+    return AppScaffold(
+      activeUnFocusKeyboard: true,
+      child: Stack(
         children: [
           ImageBackgroundLayer(
             pageViewController: _pageViewController,
@@ -78,12 +106,12 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
           Column(
             children: [
               AnimatedContainer(
-                height: partLoginWithEmail ? getHeightWithPersent(10) : getHeightWithPersent(60),
+                height: activePartLoginWithEmail ? getHeightWithPersent(10) : getHeightWithPersent(60),
                 duration: duration300,
                 curve: Curves.linear,
               ),
               AnimatedContainer(
-                height: partLoginWithEmail ? getHeightWithPersent(90) : getHeightWithPersent(40),
+                height: activePartLoginWithEmail ? getHeightWithPersent(90) : getHeightWithPersent(40),
                 duration: duration300,
                 decoration: BoxDecoration(
                   color: Utils.getThemeColorScheme(context).surface,
@@ -99,17 +127,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> with TickerProviderStat
                   ),
                 ),
                 curve: Curves.linear,
-                child: goToSelectLoginMethod
-                    ? ChooseLoginMethodLayer(
-                        partLoginWithEmail: partLoginWithEmail,
-                        pageViewController: _pageViewController,
-                        onPressContinueWithEmail: setAuthActivePartLoginWithMail,
-                      )
-                    : OnboardingLayer(
-                        authIndexPart: authIndexPart,
-                        pageViewController: _pageViewController,
-                        nextPart: onboardingNextPart,
-                      ),
+                child: getLayer(),
               ),
             ],
           ),

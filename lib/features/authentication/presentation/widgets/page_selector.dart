@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:memory_minder_app/utils/utils.dart';
 
-class CustomTabPageSelector extends StatelessWidget {
-  const CustomTabPageSelector({
+class PageSelector extends StatelessWidget {
+  const PageSelector({
     super.key,
     required this.currentIndex,
   });

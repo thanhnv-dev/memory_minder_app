@@ -6,6 +6,7 @@
   "commonSignIn": "Sign in",
   "commonSignUp": "Sign up",
   "commonEmailAddress": "Email address",
+  "commonEmailHintText": "abc@gmail.com",
   "commonPassword": "Password",
   "commonConfirmPassword": "Confirm Password",
   "commonAnd": "and",

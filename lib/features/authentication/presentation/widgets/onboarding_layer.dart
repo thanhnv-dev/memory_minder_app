@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/app_filled_button.dart';
-import 'package:memory_minder_app/features/authentication/presentation/widgets/custom_onboarding_title.dart';
-import 'package:memory_minder_app/features/authentication/presentation/widgets/custom_tab_page_selector.dart';
+import 'package:memory_minder_app/features/authentication/presentation/widgets/onboarding_title.dart';
+import 'package:memory_minder_app/features/authentication/presentation/widgets/page_selector.dart';
 import 'package:memory_minder_app/i18n/generated/locale_keys.dart';
 
 class OnboardingLayer extends StatefulWidget {
@@ -34,8 +35,8 @@ class OnboardingLayerState extends State<OnboardingLayer> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomOnboardingTitle(currentIndex: widget.authIndexPart),
-                  CustomTabPageSelector(currentIndex: widget.authIndexPart),
+                  OnboardingTitle(currentIndex: widget.authIndexPart),
+                  PageSelector(currentIndex: widget.authIndexPart),
                 ],
               ),
             ),
