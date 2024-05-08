@@ -17,7 +17,7 @@ class _ImageBackgroundLayerState extends State<ImageBackgroundLayer> {
     return PageView(
       onPageChanged: widget.nextImageBackground,
       controller: widget.pageViewController,
-      physics: const NeverScrollableScrollPhysics(), // Disable scroll
+      physics: const ClampingScrollPhysics(), // Disable scroll
       children: [
         _backgroundLayout(AppOtherImages.onboarding1),
         _backgroundLayout(AppOtherImages.onboarding2),

@@ -9,6 +9,7 @@ abstract class  LocaleKeys {
   static const commonSignUp = 'commonSignUp';
   static const commonEmailAddress = 'commonEmailAddress';
   static const commonEmailHintText = 'commonEmailHintText';
+  static const commonPasswordHintText = 'commonPasswordHintText';
   static const commonPassword = 'commonPassword';
   static const commonConfirmPassword = 'commonConfirmPassword';
   static const commonAnd = 'commonAnd';
@@ -17,6 +18,11 @@ abstract class  LocaleKeys {
   static const commonTerms = 'commonTerms';
   static const commonPrivacy = 'commonPrivacy';
   static const commonPhoneButtonTitle = 'commonPhoneButtonTitle';
+  static const validationPassWordMessages1 = 'validationPassWordMessages1';
+  static const validationPassWordMessages2 = 'validationPassWordMessages2';
+  static const validationPassWordMessages3 = 'validationPassWordMessages3';
+  static const validationPassWordMessages4 = 'validationPassWordMessages4';
+  static const validationPassWordMessages5 = 'validationPassWordMessages5';
   static const termsTextPartStart = 'termsTextPartStart';
   static const termsTextPartEnd = 'termsTextPartEnd';
   static const onboardingFirstTitle = 'onboardingFirstTitle';

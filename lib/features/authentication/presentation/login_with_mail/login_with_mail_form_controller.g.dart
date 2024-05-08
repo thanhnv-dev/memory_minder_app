@@ -1,28 +1,28 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'auth_login_with_email_form_provider.dart';
+part of 'login_with_mail_form_controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$authLoginWithEmailFormNotifierHash() =>
-    r'2cbfe0e03ecedab1fc6b867a1d1f11bf41891349';
+String _$loginWithMailControllerHash() =>
+    r'dbecc32a66c359ce42a27662a76ddc85977020f6';
 
-/// See also [AuthLoginWithEmailFormNotifier].
-@ProviderFor(AuthLoginWithEmailFormNotifier)
-final authLoginWithEmailFormNotifierProvider = AutoDisposeNotifierProvider<
-    AuthLoginWithEmailFormNotifier, GlobalKey<FormBuilderState>>.internal(
-  AuthLoginWithEmailFormNotifier.new,
-  name: r'authLoginWithEmailFormNotifierProvider',
+/// See also [LoginWithMailController].
+@ProviderFor(LoginWithMailController)
+final loginWithMailControllerProvider = AutoDisposeNotifierProvider<
+    LoginWithMailController, GlobalKey<FormBuilderState>>.internal(
+  LoginWithMailController.new,
+  name: r'loginWithMailControllerProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$authLoginWithEmailFormNotifierHash,
+      : _$loginWithMailControllerHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$AuthLoginWithEmailFormNotifier
+typedef _$LoginWithMailController
     = AutoDisposeNotifier<GlobalKey<FormBuilderState>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

@@ -14,8 +14,12 @@ class AppRouter extends $AppRouter {
           path: RoutePath.splash,
         ),
         AutoRoute(
-          page: AuthRoute.page,
+          page: OnboardingRoute.page,
           path: RoutePath.onboarding,
+        ),
+        AutoRoute(
+          page: LoginWithMailRoute.page,
+          path: RoutePath.loginWithEmail,
         ),
       ];
 }

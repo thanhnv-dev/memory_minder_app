@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:memory_minder_app/constant/app_assets.dart';
-import 'package:memory_minder_app/constant/app_colors.dart';
-import 'package:memory_minder_app/constant/app_text_styles.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/app_filled_button.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/other_login_method.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/terms_and_privacy.dart';
+import 'package:memory_minder_app/features/authentication/presentation/widgets/title_display_small.dart';
 import 'package:memory_minder_app/i18n/generated/locale_keys.dart';
 import 'package:memory_minder_app/i18n/i18n_func.dart';
 import 'package:memory_minder_app/utils/utils.dart';
@@ -69,14 +67,10 @@ class ChooseLoginMethodLayerState extends State<ChooseLoginMethodLayer> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text(
-            I18nFunc.getLocaleMessage(
+          TitleDisplaySmall(
+            data: I18nFunc.getLocaleMessage(
               LocaleKeys.authMethodTitle,
             ),
-            style: Utils.getTextTheme(context).displaySmall?.copyWith(
-                  color: Utils.getThemeColorScheme(context).onSurface,
-                ),
-            textAlign: TextAlign.center,
           ),
           Text(
             I18nFunc.getLocaleMessage(
