@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:memory_minder_app/core/error/failure.dart';
-import 'package:memory_minder_app/core/usercase/usecase.dart';
+import 'package:memory_minder_app/core/useCases/usecase.dart';
 import 'package:memory_minder_app/features/authentication/domain/entities/user_entity.dart';
 import 'package:memory_minder_app/features/authentication/domain/repositories/auth_respository.dart';
 

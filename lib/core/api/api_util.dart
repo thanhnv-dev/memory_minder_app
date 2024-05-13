@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:memory_minder_app/core/data_sources/core_local_storage.dart';
 import 'package:memory_minder_app/core/error/exceptions.dart';
-import 'network_interceptors.dart';
+import 'api_interceptors.dart';
 
 class CoreApiUtil {
   static Dio? _dio;

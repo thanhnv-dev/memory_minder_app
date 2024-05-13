@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:memory_minder_app/constant/app_assets.dart';
 import 'package:memory_minder_app/features/authentication/presentation/login_with_mail/login_with_mail_form_controller.dart';
 import 'package:memory_minder_app/features/authentication/presentation/widgets/app_field.dart';
