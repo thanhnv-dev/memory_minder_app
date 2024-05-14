@@ -4,19 +4,19 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'theme_controller.g.dart';
 
-@Riverpod(keepAlive: true)
+@riverpod
 class ThemeController extends _$ThemeController {
   @override
-  Future<ThemeMode> build() async {
+  ThemeMode build() => ThemeMode.system;
+
+  Future initTheme() async {
     final coreLocalStorage = CoreLocalStorageDataSourceImpl();
-
     bool? isDarkTheme = await coreLocalStorage.getIsDarkTheme();
-
     if (isDarkTheme == null) {
-      return ThemeMode.system;
+      state = ThemeMode.system;
+    } else {
+      state = isDarkTheme ? ThemeMode.dark : ThemeMode.light;
     }
-
-    return isDarkTheme ? ThemeMode.dark : ThemeMode.light;
   }
 
   void changeState() {}
