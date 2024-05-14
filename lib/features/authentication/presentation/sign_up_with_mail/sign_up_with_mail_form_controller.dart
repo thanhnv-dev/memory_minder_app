@@ -1,19 +1,17 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:memory_minder_app/i18n/generated/locale_keys.dart';
 import 'package:memory_minder_app/i18n/i18n_func.dart';
-import 'package:memory_minder_app/routes/route_path.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'login_with_mail_form_controller.g.dart';
+part 'sign_up_with_mail_form_controller.g.dart';
 
 @riverpod
-class LoginWithMailController extends _$LoginWithMailController {
+class SignUpWithMailController extends _$SignUpWithMailController {
   @override
   GlobalKey<FormBuilderState> build() => GlobalKey<FormBuilderState>();
 
-  void submit(BuildContext context) {
+  void submit() {
     FormBuilderState? currentState = state.currentState;
     if (currentState == null) {
       return;
@@ -21,8 +19,6 @@ class LoginWithMailController extends _$LoginWithMailController {
       bool isValidate = currentState.validate();
       if (isValidate) {
         debugPrint("value: ${currentState.fields[I18nFunc.getLocaleMessage(LocaleKeys.commonEmailAddress)]?.value}");
-
-        context.router.pushNamed(RoutePath.requestNotification);
       }
       return;
     }

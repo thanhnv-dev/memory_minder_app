@@ -29,6 +29,7 @@ class TermsAndPrivacyState extends State<TermsAndPrivacy> {
               style: Utils.getTextTheme(context).bodySmall?.copyWith(
                     color: Utils.getThemeColorScheme(context).primary,
                     decoration: TextDecoration.underline,
+                    decorationColor: Utils.getThemeColorScheme(context).primary,
                   ),
               recognizer: TapGestureRecognizer()..onTap = () => debugPrint('Tap Here Terms'),
             ),
@@ -43,6 +44,7 @@ class TermsAndPrivacyState extends State<TermsAndPrivacy> {
               style: Utils.getTextTheme(context).bodySmall?.copyWith(
                     color: Utils.getThemeColorScheme(context).primary,
                     decoration: TextDecoration.underline,
+                    decorationColor: Utils.getThemeColorScheme(context).primary,
                   ),
               recognizer: TapGestureRecognizer()..onTap = () => debugPrint('Tap Here Privacy'),
             ),

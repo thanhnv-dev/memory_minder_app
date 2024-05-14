@@ -16,11 +16,22 @@
   "commonTerms": "Điều khoản & điều kiện",
   "commonPrivacy": "Chính sách bảo mật",
   "commonPhoneButtonTitle": "Tiếp tục với Số điện thoại",
-  "validationPasswordMessages1": "Mật khẩu phải có ít nhất một ký tự đặc biệt.",
-  "validationPasswordMessages2": "Mật khẩu phải có ít nhất một chữ số ('0'-'9').",
-  "validationPasswordMessages3": "Mật khẩu phải có ít nhất một chữ cái ('a'-'z').",
-  "validationPasswordMessages4": "Mật khẩu phải có ít nhất một chữ hoa ('A'-Z').",
-  "validationPasswordMessages5": "Mật khẩu phải nhiều hơn 6 ký tự.",
+  "validationPassWordMessages1": {
+    "other": "{} phải có ít nhất một ký tự đặc biệt."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} phải có ít nhất một chữ số ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} phải có ít nhất một chữ cái ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} phải có ít nhất một chữ hoa ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} phải nhiều hơn 6 ký tự."
+  },
+  "validationPassWordMessages6": "Mật khẩu và xác nhận mật khẩu phải khớp.",
   "termsTextPartStart": "Nếu bạn đang tạo một tài khoản mới,",
   "termsTextPartEnd": "sẽ áp dụng.",
   "onboardingFirstTitle": "Chào mừng tới MemoryMinder!",

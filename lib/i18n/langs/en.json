@@ -16,11 +16,22 @@
   "commonTerms": "Terms & Conditions",
   "commonPrivacy": "Privacy Policy",
   "commonPhoneButtonTitle": "Continue with Phone",
-  "validationPassWordMessages1": "Password must have at least one special character.",
-  "validationPassWordMessages2": "Passwords must have at least one digit ('0'-'9').",
-  "validationPassWordMessages3": "Passwords must have at least one letter ('a'-'z').",
-  "validationPassWordMessages4": "Passwords must have at least one uppercase ('A'-Z').",
-  "validationPassWordMessages5": "Password must be more than 6 characters.",
+  "validationPassWordMessages1": {
+    "other": "{} must have at least one special character."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} must have at least one digit ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} must have at least one letter ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} must have at least one uppercase ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} must be more than 6 characters."
+  },
+  "validationPassWordMessages6": "Password and Confirm password must match",
   "termsTextPartStart": "If you are creating a new account,",
   "termsTextPartEnd": "will apply.",
   "onboardingFirstTitle": "Welcome to MemoryMinder!",

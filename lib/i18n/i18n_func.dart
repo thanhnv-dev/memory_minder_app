@@ -6,6 +6,13 @@ class I18nFunc {
     return key.tr();
   }
 
+  static String getLocaleMessageWithPlural(String key, List<String> args) {
+    return plural(
+      key: key,
+      args: args,
+    );
+  }
+
   static String converDateOfBirth(String date) {
     try {
       return DateFormat('dd MMMM yyyy').format(DateTime.parse(date.toString()).toLocal());

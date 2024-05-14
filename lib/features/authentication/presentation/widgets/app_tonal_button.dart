@@ -4,11 +4,20 @@ import 'package:memory_minder_app/utils/utils.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AppTonalButton extends StatefulWidget {
-  const AppTonalButton({super.key, this.titleKey, this.svgAsset, required this.onPressed});
+  const AppTonalButton({
+    super.key,
+    this.titleKey,
+    this.svgAsset,
+    required this.onPressed,
+    this.backgroundColor,
+    this.titleColor,
+  });
 
   final String? titleKey;
   final String? svgAsset;
   final void Function()? onPressed;
+  final Color? backgroundColor;
+  final Color? titleColor;
 
   @override
   AppTonalButtonState createState() => AppTonalButtonState();
@@ -26,7 +35,7 @@ class AppTonalButtonState extends State<AppTonalButton> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        backgroundColor: Utils.getThemeColorScheme(context).secondaryContainer,
+        backgroundColor: widget.backgroundColor ?? Utils.getThemeColorScheme(context).secondaryContainer,
       ),
       onPressed: widget.onPressed,
       child: Row(
@@ -38,7 +47,7 @@ class AppTonalButtonState extends State<AppTonalButton> {
               ? Text(
                   I18nFunc.getLocaleMessage(titleKey),
                   style: Utils.getTextTheme(context).titleSmall?.copyWith(
-                        color: Utils.getThemeColorScheme(context).onSecondaryContainer,
+                        color: widget.titleColor ?? Utils.getThemeColorScheme(context).onSecondaryContainer,
                       ),
                 )
               : const SizedBox(),

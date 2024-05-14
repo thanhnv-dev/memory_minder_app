@@ -19,9 +19,15 @@ final TextTheme appTextTheme = TextTheme(
   bodySmall: AppTextStyles.body.small,
 );
 
-final ThemeData appLightTheme = MaterialTheme(appTextTheme, scheme: MaterialTheme.lightScheme()).light();
+final ThemeData appLightTheme = MaterialTheme(
+  appTextTheme,
+  scheme: MaterialTheme.lightScheme(),
+).light();
 
-final ThemeData appDarkTheme = MaterialTheme(appTextTheme, scheme: MaterialTheme.darkScheme()).dark();
+final ThemeData appDarkTheme = MaterialTheme(
+  appTextTheme,
+  scheme: MaterialTheme.darkScheme(),
+).dark();
 
 class MaterialTheme {
   final TextTheme textTheme;

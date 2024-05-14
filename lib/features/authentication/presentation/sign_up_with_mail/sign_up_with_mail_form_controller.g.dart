@@ -1,28 +1,28 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'login_with_mail_form_controller.dart';
+part of 'sign_up_with_mail_form_controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$loginWithMailControllerHash() =>
-    r'39a579fe2e15891e141c57d77cfae4cb0b37d3cb';
+String _$signUpWithMailControllerHash() =>
+    r'e5d02a934f8e1d0a3cd01dc48d2f0d4678a26fe6';
 
-/// See also [LoginWithMailController].
-@ProviderFor(LoginWithMailController)
-final loginWithMailControllerProvider = AutoDisposeNotifierProvider<
-    LoginWithMailController, GlobalKey<FormBuilderState>>.internal(
-  LoginWithMailController.new,
-  name: r'loginWithMailControllerProvider',
+/// See also [SignUpWithMailController].
+@ProviderFor(SignUpWithMailController)
+final signUpWithMailControllerProvider = AutoDisposeNotifierProvider<
+    SignUpWithMailController, GlobalKey<FormBuilderState>>.internal(
+  SignUpWithMailController.new,
+  name: r'signUpWithMailControllerProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$loginWithMailControllerHash,
+      : _$signUpWithMailControllerHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$LoginWithMailController
+typedef _$SignUpWithMailController
     = AutoDisposeNotifier<GlobalKey<FormBuilderState>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

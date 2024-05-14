@@ -32,11 +32,22 @@ class CodegenLoader extends AssetLoader{
   "commonTerms": "Terms & Conditions",
   "commonPrivacy": "Privacy Policy",
   "commonPhoneButtonTitle": "Continue with Phone",
-  "validationPassWordMessages1": "Password must have at least one special character.",
-  "validationPassWordMessages2": "Passwords must have at least one digit ('0'-'9').",
-  "validationPassWordMessages3": "Passwords must have at least one letter ('a'-'z').",
-  "validationPassWordMessages4": "Passwords must have at least one uppercase ('A'-Z').",
-  "validationPassWordMessages5": "Password must be more than 6 characters.",
+  "validationPassWordMessages1": {
+    "other": "{} must have at least one special character."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} must have at least one digit ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} must have at least one letter ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} must have at least one uppercase ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} must be more than 6 characters."
+  },
+  "validationPassWordMessages6": "Password and Confirm password must match",
   "termsTextPartStart": "If you are creating a new account,",
   "termsTextPartEnd": "will apply.",
   "onboardingFirstTitle": "Welcome to MemoryMinder!",
@@ -83,11 +94,22 @@ static const Map<String,dynamic> vi = {
   "commonTerms": "Điều khoản & điều kiện",
   "commonPrivacy": "Chính sách bảo mật",
   "commonPhoneButtonTitle": "Tiếp tục với Số điện thoại",
-  "validationPasswordMessages1": "Mật khẩu phải có ít nhất một ký tự đặc biệt.",
-  "validationPasswordMessages2": "Mật khẩu phải có ít nhất một chữ số ('0'-'9').",
-  "validationPasswordMessages3": "Mật khẩu phải có ít nhất một chữ cái ('a'-'z').",
-  "validationPasswordMessages4": "Mật khẩu phải có ít nhất một chữ hoa ('A'-Z').",
-  "validationPasswordMessages5": "Mật khẩu phải nhiều hơn 6 ký tự.",
+  "validationPassWordMessages1": {
+    "other": "{} phải có ít nhất một ký tự đặc biệt."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} phải có ít nhất một chữ số ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} phải có ít nhất một chữ cái ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} phải có ít nhất một chữ hoa ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} phải nhiều hơn 6 ký tự."
+  },
+  "validationPassWordMessages6": "Mật khẩu và xác nhận mật khẩu phải khớp.",
   "termsTextPartStart": "Nếu bạn đang tạo một tài khoản mới,",
   "termsTextPartEnd": "sẽ áp dụng.",
   "onboardingFirstTitle": "Chào mừng tới MemoryMinder!",

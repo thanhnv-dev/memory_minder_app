@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:memory_minder_app/constant/app_assets.dart';
+import 'package:memory_minder_app/i18n/i18n_func.dart';
+import 'package:memory_minder_app/utils/utils.dart';
 
 class AppField extends ConsumerStatefulWidget {
   const AppField({
@@ -12,6 +14,7 @@ class AppField extends ConsumerStatefulWidget {
     required this.prefixIcon,
     required this.formBuilderValidators,
     this.fieldKey,
+    this.formKey,
     this.autovalidateMode = AutovalidateMode.onUserInteraction,
     this.name,
     this.obscureText = false,
@@ -24,6 +27,7 @@ class AppField extends ConsumerStatefulWidget {
   final Widget prefixIcon;
   final List<String? Function(String?)> formBuilderValidators;
   final GlobalKey<FormBuilderFieldState>? fieldKey;
+  final GlobalKey<FormBuilderState>? formKey;
   final AutovalidateMode? autovalidateMode;
   final bool obscureText;
 
@@ -67,6 +71,7 @@ class _AppFieldState extends ConsumerState<AppField> {
           padding: const EdgeInsets.all(15),
           child: widget.prefixIcon,
         ),
+        errorMaxLines: 3,
         suffixIcon: widget.obscureText
             ? FilledButton.tonal(
                 onPressed: changeObscureState,
@@ -80,6 +85,10 @@ class _AppFieldState extends ConsumerState<AppField> {
                 ),
                 child: SvgPicture.asset(
                   obscureState ? AppSvgIcons.eyeShow : AppSvgIcons.eyeHide,
+                  colorFilter: ColorFilter.mode(
+                    Utils.getThemeColorScheme(context).onSurface,
+                    BlendMode.srcIn,
+                  ),
                   fit: BoxFit.contain,
                 ),
               )

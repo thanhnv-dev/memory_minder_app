@@ -102,4 +102,10 @@ class Custom {
     fontWeight: FontWeight.w900,
     fontSize: 30,
   );
+
+  final TextStyle bold20 = TextStyle(
+    fontFamily: AppFontsFamily.roboto.bold,
+    fontWeight: FontWeight.w700,
+    fontSize: 20,
+  );
 }

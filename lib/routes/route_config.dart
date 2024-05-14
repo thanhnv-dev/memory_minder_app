@@ -21,5 +21,17 @@ class AppRouter extends $AppRouter {
           page: LoginWithMailRoute.page,
           path: RoutePath.loginWithEmail,
         ),
+        AutoRoute(
+          page: ForgotPasswordRoute.page,
+          path: RoutePath.forgotPassword,
+        ),
+        AutoRoute(
+          page: SignUpWithMailRoute.page,
+          path: RoutePath.signUpWithEmail,
+        ),
+        AutoRoute(
+          page: RequestNotificationRoute.page,
+          path: RoutePath.requestNotification,
+        ),
       ];
 }

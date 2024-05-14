@@ -23,6 +23,7 @@ abstract class  LocaleKeys {
   static const validationPassWordMessages3 = 'validationPassWordMessages3';
   static const validationPassWordMessages4 = 'validationPassWordMessages4';
   static const validationPassWordMessages5 = 'validationPassWordMessages5';
+  static const validationPassWordMessages6 = 'validationPassWordMessages6';
   static const termsTextPartStart = 'termsTextPartStart';
   static const termsTextPartEnd = 'termsTextPartEnd';
   static const onboardingFirstTitle = 'onboardingFirstTitle';
