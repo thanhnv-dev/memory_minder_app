@@ -10,12 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  #sub module
-  local_storage:
-    path: ./modules/local_storage
-  network:
-    path: ./modules/network
-
   cupertino_icons: ^1.0.6
   auto_route: ^8.0.3
   flutter_svg: ^2.0.10+1
