@@ -31,3 +31,9 @@ fvm use 3.19.5
 fvm flutter pub get;
 fvm flutter packages pub run build_runner build --delete-conflicting-outputs;
 cd "$ROOT_DIR"
+
+
+log "Network module"
+cd lib/modules/network;
+fvm flutter pub get;
+cd "$ROOT_DIR"

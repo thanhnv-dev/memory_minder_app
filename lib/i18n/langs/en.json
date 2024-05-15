@@ -1,0 +1,62 @@
+{
+  "appName": "Memory Minder",
+  "appNamePart1": "Memory",
+  "appNamePart2": "Minder",
+  "commonOrText": "Or",
+  "commonSignIn": "Sign in",
+  "commonSignUp": "Sign up",
+  "commonEmailAddress": "Email address",
+  "commonEmailHintText": "abc@gmail.com",
+  "commonPasswordHintText": "• • • • • • • •",
+  "commonPassword": "Password",
+  "commonConfirmPassword": "Confirm Password",
+  "commonAnd": "and",
+  "commonBack": "Back",
+  "commonNext": "Next",
+  "commonTerms": "Terms & Conditions",
+  "commonPrivacy": "Privacy Policy",
+  "commonPhoneButtonTitle": "Continue with Phone",
+  "validationPassWordMessages1": {
+    "other": "{} must have at least one special character."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} must have at least one digit ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} must have at least one letter ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} must have at least one uppercase ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} must be more than 6 characters."
+  },
+  "validationPassWordMessages6": "Password and Confirm password must match",
+  "termsTextPartStart": "If you are creating a new account,",
+  "termsTextPartEnd": "will apply.",
+  "onboardingFirstTitle": "Welcome to MemoryMinder!",
+  "onboardingFirstSubTitle": "Get ready to discover new ways to memorize English vocabulary and sentences effectively and quickly.",
+  "onboardingSecondTitle": "Spaced repetition method",
+  "onboardingSecondSubTitle": "Go through your English vocabulary and sentences with spaced repetition. MemoryMinder will help you organize and schedule review sessions for effective memorization.",
+  "onboardingThirdTitle": "Start your journey",
+  "onboardingThirdSubTitle": "Start memorizing your English words and sentences today! Use MemoryMinder to create a personalized plan and progress each day as you progress.",
+  "onboardingButtonStartedTitle": "Get started",
+  "authMethodTitle": "Login or sign up",
+  "authMethodSubTitle": "Please select your preferred method to continue setting up your account",
+  "authMethodEmailButtonTitle": "Continue with Email",
+  "signInWithEmailTitle": "Sign in with Email",
+  "signInWithEmailRememberTitle": "Remember me",
+  "signInWithEmailForgotTitle": "Forgot password?",
+  "signInWithEmailSuggestTitle": "Don't have an account yet?",
+  "signUpWithEmailTitle": "Sign up with Email",
+  "signInWithEmailAgreeTermsPartStart": "I agree with",
+  "signUpWithEmailSuggestTitle": "Do you already have an account?",
+  "forgotPasswordTitle": "Forgot your password?",
+  "forgotPasswordSubTitle": "Enter the email associated with your account.",
+  "forgotPasswordSuggest": "Remember your password?",
+  "forgotPasswordButtonResetPasswordTitle": "Reset password",
+  "notificationRequestTitle": "Turn on notifications?",
+  "notificationRequestSubTitle": "Don't miss important messages like check-in details and account activity.",
+  "notificationRequestButtonEnableTitle": "Enable notifications",
+  "notificationRequestButtonSkipTitle": "Skip"
+}

@@ -1,0 +1,62 @@
+{
+  "appName": "Memory Minder",
+  "appNamePart1": "Memory",
+  "appNamePart2": "Minder",
+  "commonOrText": "Hoặc",
+  "commonSignIn": "Đăng nhập",
+  "commonSignUp": "Đăng ký",
+  "commonEmailAddress": "Địa chỉ email",
+  "commonEmailHintText": "abc@gmail.com",
+  "commonPasswordHintText": "• • • • • • • •",
+  "commonPassword": "Mật khẩu",
+  "commonConfirmPassword": "Xác nhận mật khẩu",
+  "commonAnd": "và",
+  "commonBack": "Trở lại",
+  "commonNext": "Tiếp",
+  "commonTerms": "Điều khoản & điều kiện",
+  "commonPrivacy": "Chính sách bảo mật",
+  "commonPhoneButtonTitle": "Tiếp tục với Số điện thoại",
+  "validationPassWordMessages1": {
+    "other": "{} phải có ít nhất một ký tự đặc biệt."
+  },
+  "validationPassWordMessages2": {
+    "other": "{} phải có ít nhất một chữ số ('0'-'9')."
+  },
+  "validationPassWordMessages3": {
+    "other": "{} phải có ít nhất một chữ cái ('a'-'z')."
+  },
+  "validationPassWordMessages4": {
+    "other": "{} phải có ít nhất một chữ hoa ('A'-Z')."
+  },
+  "validationPassWordMessages5": {
+    "other": "{} phải nhiều hơn 6 ký tự."
+  },
+  "validationPassWordMessages6": "Mật khẩu và xác nhận mật khẩu phải khớp.",
+  "termsTextPartStart": "Nếu bạn đang tạo một tài khoản mới,",
+  "termsTextPartEnd": "sẽ áp dụng.",
+  "onboardingFirstTitle": "Chào mừng tới MemoryMinder!",
+  "onboardingFirstSubTitle": "Hãy sẵn sàng khám phá những cách mới để ghi nhớ từ vựng và câu tiếng Anh một cách hiệu quả và nhanh chóng.",
+  "onboardingSecondTitle": "Phương pháp lặp lại ngắt quãng",
+  "onboardingSecondSubTitle": "Xem lại từ vựng và câu tiếng Anh của bạn với phương pháp lặp lại ngắt quãng. MemoryMinder sẽ giúp bạn tổ chức và lên lịch các buổi ôn tập để ghi nhớ hiệu quả.",
+  "onboardingThirdTitle": "Bắt đầu cuộc hành trình của bạn",
+  "onboardingThirdSubTitle": "Bắt đầu ghi nhớ các từ và câu tiếng Anh của bạn ngay hôm nay! Sử dụng MemoryMinder để tạo kế hoạch cá nhân hóa và tiến bộ mỗi ngày khi bạn tiến bộ.",
+  "onboardingButtonStartedTitle": "Bắt đầu",
+  "authMethodTitle": "Đăng nhập hoặc đăng ký",
+  "authMethodSubTitle": "Vui lòng chọn phương pháp ưa thích của bạn để tiếp tục thiết lập tài khoản của bạn",
+  "authMethodEmailButtonTitle": "Tiếp tục với Email",
+  "signInWithEmailTitle": "Đăng nhập bằng Email",
+  "signInWithEmailRememberTitle": "Ghi nhớ tôi",
+  "signInWithEmailForgotTitle": "Quên mật khẩu?",
+  "signInWithEmailSuggestTitle": "Vẫn chưa có tài khoản?",
+  "signUpWithEmailTitle": "Đăng kys bằng Email",
+  "signInWithEmailAgreeTermsPartStart": "Tôi đồng ý với",
+  "signUpWithEmailSuggestTitle": "Bạn đã có tài khoản chưa?",
+  "forgotPasswordTitle": "Quên mật khẩu?",
+  "forgotPasswordSubTitle": "Nhập email được liên kết với tài khoản của bạn.",
+  "forgotPasswordSuggest": "Bạn đã nhớ mật khẩu?",
+  "forgotPasswordButtonResetPasswordTitle": "Đặt lại mật khẩu",
+  "notificationRequestTitle": "Bật thông báo?",
+  "notificationRequestSubTitle": "Đừng bỏ lỡ các tin nhắn quan trọng như chi tiết đăng ký và hoạt động tài khoản.",
+  "notificationRequestButtonEnableTitle": "Bật thông báo",
+  "notificationRequestButtonSkipTitle": "Bỏ qua"
+}
