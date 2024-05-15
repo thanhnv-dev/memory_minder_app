@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930699359038",
+    "project_id": "memory-minder-dev",
+    "storage_bucket": "memory-minder-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930699359038:android:44c8cc322953774679326f",
+        "android_client_info": {
+          "package_name": "com.example.memoryMinderApp.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoeR6m0AqWa5_hLl-0psvPXVTTXnQfJhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
