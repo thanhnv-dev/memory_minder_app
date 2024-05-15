@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:memory_minder_app/config/app_theme.dart';
-import 'package:memory_minder_app/core/controller/app_providers.dart';
 import 'package:memory_minder_app/core/controller/theme_controller.dart';
 import 'package:memory_minder_app/i18n/i18n_func.dart';
 import 'package:memory_minder_app/i18n/i18n.dart';
 import 'package:memory_minder_app/routes/route_config.dart';
 
-late ProviderContainer appProvider;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  appProvider = await appProviderContainer();
-
-  await appProvider.read(themeControllerProvider.notifier).initTheme();
-
   runApp(
     await I18n.init(
-      child: UncontrolledProviderScope(
-        container: appProvider,
-        child: const ProviderScope(
-          child: MyApp(),
-        ),
+      child: const ProviderScope(
+        child: MyApp(),
       ),
     ),
   );
