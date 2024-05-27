@@ -3,9 +3,8 @@ import 'package:retrofit/retrofit.dart';
 
 part 'auth_network_client.g.dart';
 
-@RestApi(baseUrl: 'https://server-jobs-pot.vercel.app/')
 abstract class AuthApiClient {
-  factory AuthApiClient(Dio dio, {String baseUrl}) = _AuthApiClient;
+  factory AuthApiClient(Dio dio) = _AuthApiClient;
 
   @POST("user/check-account")
   Future<dynamic> checkAccount(@Body() Map<String, dynamic> body);

@@ -1,3 +1,5 @@
+import 'package:memory_minder_app/config/app_configs.dart';
+
 enum Flavor {
   production,
   dev,
@@ -19,4 +21,14 @@ class F {
     }
   }
 
+  static String get baseUrl {
+    switch (appFlavor) {
+      case Flavor.production:
+        return AppConfigs.productionUrl;
+      case Flavor.dev:
+        return AppConfigs.localUrl;
+      default:
+        return AppConfigs.productionUrl;
+    }
+  }
 }

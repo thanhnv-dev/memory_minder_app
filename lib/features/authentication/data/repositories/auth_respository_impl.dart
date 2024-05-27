@@ -12,7 +12,7 @@ class AuthRepositoryImp implements AuthRepository {
   late AuthApiClient _authApiClient;
 
   AuthRepositoryImp() {
-    _authApiClient = AuthApiClient(CoreApiUtil().getDio(), baseUrl: 'https://server-jobs-pot.vercel.app/');
+    _authApiClient = AuthApiClient(CoreApiUtil().getDio());
   }
 
   @override
