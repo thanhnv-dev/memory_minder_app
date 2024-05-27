@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:memory_minder_app/core/data_sources/core_local_storage.dart';
 import 'package:memory_minder_app/core/error/exceptions.dart';
+import 'package:memory_minder_app/flavors.dart';
 import 'api_interceptors.dart';
 
 class CoreApiUtil {
@@ -28,7 +29,11 @@ class CoreApiUtil {
     })? responseResult,
   }) {
     if (_dio == null) {
-      _dio = Dio();
+      _dio = Dio(
+        BaseOptions(
+          baseUrl: F.baseUrl,
+        ),
+      );
 
       _dio!.options.connectTimeout = const Duration(seconds: 60);
 
