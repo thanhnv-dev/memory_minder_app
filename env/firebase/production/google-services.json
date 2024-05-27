@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "550136929099",
+    "project_id": "memory-minder-5ca38",
+    "storage_bucket": "memory-minder-5ca38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550136929099:android:c91bc0cc97a0d46cfbe6ce",
+        "android_client_info": {
+          "package_name": "com.example.memory_minder_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB14eefDJPvwvytxcy7rji_zkx6oJbAclI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,7 +6,7 @@ import 'package:memory_minder_app/i18n/i18n_func.dart';
 import 'package:memory_minder_app/i18n/i18n.dart';
 import 'package:memory_minder_app/routes/route_config.dart';
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(

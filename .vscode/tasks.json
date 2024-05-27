@@ -41,64 +41,8 @@
       }
     },
 
-    // START network.
     {
-      "label": "network - build_runner build",
-      "type": "shell",
-      "command": "fvm flutter packages pub run build_runner build --delete-conflicting-outputs",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/network"
-      }
-    },
-    {
-      "label": "network - flutter pub get",
-      "type": "shell",
-      "command": "fvm flutter pub get",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/network"
-      }
-    },
-    {
-      "label": "network - flutter clean",
-      "type": "shell",
-      "command": "fvm flutter clean",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/network"
-      }
-    },
-    {
-      "label": "network - flutter pub upgrade",
-      "type": "shell",
-      "command": "fvm flutter pub upgrade --major-versions",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/network"
-      }
-    },
-    // END network.
-
-    // START main.
-    {
-      "label": "main - ios pod",
+      "label": "flutter - ios pod",
       "type": "shell",
       "command": "cd ios && pod install && cd ..",
       "presentation": {
@@ -106,11 +50,11 @@
         "panel": "new"
       },
       "options": {
-        "cwd": "${workspaceFolder}/main"
+        "cwd": "${workspaceFolder}"
       }
     },
     {
-      "label": "main - ios pod update",
+      "label": "flutter - ios pod update",
       "type": "shell",
       "command": "cd ios && pod install --repo-update && cd ..",
       "group": "none",
@@ -123,7 +67,7 @@
       }
     },
     {
-      "label": "main - flutter precache ios",
+      "label": "flutter - precache ios",
       "type": "shell",
       "command": "fvm flutter precache --ios",
       "group": "none",
@@ -136,7 +80,7 @@
       }
     },
     {
-      "label": "main - flutter pub get",
+      "label": "flutter - pub get",
       "type": "shell",
       "command": "fvm flutter pub get",
       "group": "none",
@@ -149,7 +93,7 @@
       }
     },
     {
-      "label": "main - flutter clean",
+      "label": "flutter - clean",
       "type": "shell",
       "command": "fvm flutter clean",
       "group": "none",
@@ -162,7 +106,7 @@
       }
     },
     {
-      "label": "main - flutter pub upgrade",
+      "label": "flutter - pub upgrade",
       "type": "shell",
       "command": "fvm flutter pub upgrade --major-versions",
       "group": "none",
@@ -175,20 +119,7 @@
       }
     },
     {
-      "label": "main - build_runner build",
-      "type": "shell",
-      "command": "fvm flutter packages pub run build_runner build --delete-conflicting-outputs",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}"
-      }
-    },
-    {
-      "label": "main - auto_route generated watch",
+      "label": "auto_route - generated watch",
       "type": "shell",
       "command": "fvm flutter packages pub run build_runner watch",
       "group": "none",
@@ -201,7 +132,7 @@
       }
     },
     {
-      "label": "main - auto_route generated one time",
+      "label": "auto_route - generated one time",
       "type": "shell",
       "command": "fvm flutter packages pub run build_runner build",
       "group": "none",
@@ -214,7 +145,7 @@
       }
     },
     {
-      "label": "main - i18n generate codegen_loader.g.dart",
+      "label": "i18n - generate codegen_loader.g.dart",
       "type": "shell",
       "command": "chmod 755 scripts/i18n_generate_code_loader.sh && scripts/i18n_generate_code_loader.sh",
       "group": "none",
@@ -227,7 +158,7 @@
       }
     },
     {
-      "label": "main - i18n generate file locale_keys.dart",
+      "label": "i18n - generate file locale_keys.dart",
       "type": "shell",
       "command": "chmod 755 scripts/i18n_generate_locale_keys.sh && scripts/i18n_generate_locale_keys.sh",
       "group": "none",
@@ -238,104 +169,6 @@
       "options": {
         "cwd": "${workspaceFolder}"
       }
-    },
-    // END main
-
-    // START local_storage.
-    {
-      "label": "local_storage - flutter pub get",
-      "type": "shell",
-      "command": "fvm flutter pub get",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/local_storage"
-      }
-    },
-    {
-      "label": "local_storage - flutter clean",
-      "type": "shell",
-      "command": "fvm flutter clean",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/local_storage"
-      }
-    },
-    {
-      "label": "local_storage - flutter pub upgrade",
-      "type": "shell",
-      "command": "fvm flutter pub upgrade --major-versions",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/local_storage"
-      }
-    },
-    // END local_storage.
-
-    // START models.
-    {
-      "label": "models - flutter pub get",
-      "type": "shell",
-      "command": "fvm flutter pub get",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/models"
-      }
-    },
-    {
-      "label": "models - flutter clean",
-      "type": "shell",
-      "command": "fvm flutter clean",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/models"
-      }
-    },
-    {
-      "label": "models - flutter pub upgrade",
-      "type": "shell",
-      "command": "fvm flutter pub upgrade --major-versions",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/models"
-      }
-    },
-    {
-      "label": "models - build_runner build",
-      "type": "shell",
-      "command": "fvm flutter packages pub run build_runner build --delete-conflicting-outputs",
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "options": {
-        "cwd": "${workspaceFolder}/modules/models"
-      }
     }
-    // END models.
   ]
 }

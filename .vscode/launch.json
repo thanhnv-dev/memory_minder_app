@@ -2,10 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "memory_minder_app",
+      "name": "Production",
       "request": "launch",
       "type": "dart",
-      "args": ["lib/main.dart"]
+      "cwd": "${workspaceFolder}/main",
+      "args": ["--flavor", "production", "-t", "lib/main_production.dart"]
+    },
+    {
+      "name": "Dev",
+      "request": "launch",
+      "type": "dart",
+      "cwd": "${workspaceFolder}/main",
+      "args": ["--flavor", "dev", "-t", "lib/main_dev.dart"]
     }
   ]
 }

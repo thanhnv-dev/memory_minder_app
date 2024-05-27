@@ -10,12 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  #sub module
-  local_storage:
-    path: ./modules/local_storage
-  network:
-    path: ./modules/network
-
   cupertino_icons: ^1.0.6
   auto_route: ^8.0.3
   flutter_svg: ^2.0.10+1
@@ -31,6 +25,34 @@ dependencies:
   riverpod_annotation: ^2.3.5
   flutter_form_builder: ^9.2.1
   form_builder_validators: ^9.1.0
+  flutter_flavorizr: ^2.2.3
+  google_fonts: ^6.2.1
+
+flavorizr:
+  flavors:
+    production:
+      app:
+        name: "Memory Minder"
+      android:
+        applicationId: "com.example.memory_minder_app"
+        firebase:
+          config: "./env/firebase/production/google-services.json"
+      ios:
+        bundleId: "com.example.memoryMinderApp"
+        firebase:
+          config: "./env/firebase/production/GoogleService-Info.plist"
+
+    dev:
+      app:
+        name: "Memory Minder Dev"
+      android:
+        applicationId: "com.example.memory_minder_app.dev"
+        firebase:
+          config: "./env/firebase/dev/google-services.json"
+      ios:
+        bundleId: "com.example.memoryMinderApp.dev"
+        firebase:
+          config: "./env/firebase/dev/GoogleService-Info.plist"
 
 dev_dependencies:
   flutter_test:
@@ -54,18 +76,4 @@ flutter:
     - lib/assets/images/svg/
     - lib/assets/images/other/
     - lib/i18n/langs/
-
-  fonts:
-    - family: Roboto
-      fonts:
-        - asset: lib/assets/fonts/roboto/Roboto-Black.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-BlackItalic.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-Bold.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-BoldItalic.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-Italic.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-Light.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-LightItalic.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-Medium.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-MediumItalic.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-Regular.ttf
-        - asset: lib/assets/fonts/roboto/Roboto-ThinItalic.ttf
+    - lib/assets/google_fonts/
