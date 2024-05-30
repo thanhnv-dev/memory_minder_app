@@ -5,14 +5,14 @@
       "name": "Production",
       "request": "launch",
       "type": "dart",
-      "cwd": "${workspaceFolder}/main",
+      "cwd": "${workspaceFolder}",
       "args": ["--flavor", "production", "-t", "lib/main_production.dart"]
     },
     {
       "name": "Dev",
       "request": "launch",
       "type": "dart",
-      "cwd": "${workspaceFolder}/main",
+      "cwd": "${workspaceFolder}",
       "args": ["--flavor", "dev", "-t", "lib/main_dev.dart"]
     }
   ]

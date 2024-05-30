@@ -52,7 +52,7 @@ class Title {
     letterSpacing: 0.15,
   );
   final TextStyle small = GoogleFonts.roboto(
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w500,
     fontSize: 14,
     letterSpacing: 0.1,
   );

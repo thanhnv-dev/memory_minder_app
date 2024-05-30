@@ -27,6 +27,8 @@ dependencies:
   form_builder_validators: ^9.1.0
   flutter_flavorizr: ^2.2.3
   google_fonts: ^6.2.1
+  crypto: ^3.0.3
+  flutter_easyloading: ^3.0.5
 
 flavorizr:
   flavors:

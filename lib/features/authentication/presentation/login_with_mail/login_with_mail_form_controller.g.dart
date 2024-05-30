@@ -7,7 +7,7 @@ part of 'login_with_mail_form_controller.dart';
 // **************************************************************************
 
 String _$loginWithMailControllerHash() =>
-    r'39a579fe2e15891e141c57d77cfae4cb0b37d3cb';
+    r'17892b5ef2a6c2586bb5e97879230025e1e66180';
 
 /// See also [LoginWithMailController].
 @ProviderFor(LoginWithMailController)

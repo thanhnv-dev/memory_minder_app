@@ -63,7 +63,7 @@ class OnboardingTitle extends StatelessWidget {
                 I18nFunc.getLocaleMessage(
                   subTitleKey,
                 ),
-                style: textTheme.titleSmall?.copyWith(
+                style: textTheme.bodyMedium?.copyWith(
                   color: colorScheme.onSurface,
                 ),
                 textAlign: TextAlign.center,
