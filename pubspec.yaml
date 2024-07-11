@@ -24,7 +24,7 @@ dependencies:
   flutter_riverpod: ^2.5.1
   riverpod_annotation: ^2.3.5
   flutter_form_builder: ^9.2.1
-  form_builder_validators: ^9.1.0
+  form_builder_validators: ^10.0.1
   flutter_flavorizr: ^2.2.3
   google_fonts: ^6.2.1
   crypto: ^3.0.3
@@ -60,7 +60,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
   auto_route_generator: ^8.0.0
   build_runner: ^2.4.9
   freezed: ^2.5.2
